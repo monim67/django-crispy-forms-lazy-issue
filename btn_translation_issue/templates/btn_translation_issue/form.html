@@ -28,6 +28,14 @@
         <div class="row">
             <div class='col-sm-6'>
                 {% crispy form %}
+
+                {% get_available_languages as languages %}
+                Select Language: 
+                {% for lang_code, lang_name in languages %}
+                    {% language lang_code %}
+                    <a href="{% url 'btn_translation_issue:index' %}">{{ lang_name }}</a>
+                    {% endlanguage %}
+                {% endfor %}
             </div>
         </div>
     </div>
