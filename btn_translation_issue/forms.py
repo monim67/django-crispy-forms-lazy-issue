@@ -1,7 +1,14 @@
 from crispy_forms.helper import FormHelper
-from crispy_forms.layout import Submit, Reset, Button
+from crispy_forms.layout import Layout, Submit, Reset, Button
 from django import forms
 from django.utils.translation import gettext_lazy as _
+
+
+common_buttons = Layout(
+    Reset('reset', _('Reset')),
+    Button('btn', _('Button')),
+    Submit('submit', _('Submit')),
+)
 
 
 class DemoForm(forms.Form):
@@ -11,6 +18,8 @@ class DemoForm(forms.Form):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.helper = FormHelper()
-        self.helper.add_input(Reset('reset', _('Reset')))
-        self.helper.add_input(Button('btn', _('Button')))
-        self.helper.add_input(Submit('submit', _('Submit')))
+        self.helper.layout = Layout(
+            'name',
+            'message',
+            common_buttons,
+        )
