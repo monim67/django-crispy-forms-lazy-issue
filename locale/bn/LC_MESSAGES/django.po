@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-02 22:34+0600\n"
+"POT-Creation-Date: 2020-01-02 22:39+0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,24 +19,24 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: .\btn_translation_issue\forms.py:8
-msgid "Name"
-msgstr "নাম"
-
-#: .\btn_translation_issue\forms.py:9
-msgid "Message"
-msgstr "বার্তা"
-
-#: .\btn_translation_issue\forms.py:14
 msgid "Reset"
 msgstr "রিসেট"
 
-#: .\btn_translation_issue\forms.py:15
+#: .\btn_translation_issue\forms.py:9
 msgid "Button"
 msgstr "বাটন"
 
-#: .\btn_translation_issue\forms.py:16
+#: .\btn_translation_issue\forms.py:10
 msgid "Submit"
 msgstr "জমা দিন"
+
+#: .\btn_translation_issue\forms.py:15
+msgid "Name"
+msgstr "নাম"
+
+#: .\btn_translation_issue\forms.py:16
+msgid "Message"
+msgstr "বার্তা"
 
 #: .\btn_translation_issue\templates\btn_translation_issue\form.html:17
 msgid "Button translation issue demo"
