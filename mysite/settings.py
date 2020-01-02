@@ -25,7 +25,7 @@ SECRET_KEY = 'k+zu(1l(uqygei-yy2=2%+wc00hi!e)&xp)%x@ia!*e3%o9hqq'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', 'django-crispy-forms-lazy-issue.herokuapp.com']
 
 
 # Application definition

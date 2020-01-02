@@ -1,10 +1,11 @@
 {
-  "name": "django-crispy-forms-translation-issue",
+  "name": "django-crispy-forms-lazy-issue",
   "version": "1.0.0",
   "scripts": {
     "start": "python manage.py runserver 127.0.0.1:8002",
     "makemessages": "django-admin makemessages -l bn --ignore=venv/*",
     "compilemessages": "python manage.py compilemessages -l bn",
+    "deploy": "git push heroku master",
     "test": "python manage.py test"
   },
   "license": "MIT"
